@@ -294,13 +294,7 @@
         }
 
         document.getElementById("newGameButton").addEventListener("click", function() {
-            // TODO: reset game
-
-            x.fill(0);
-            scramblePuzzlePieces();
-            addRemoveEventListenersToSquares();
-
-            messages.textContent = "";
+            location.reload();
         }, false);
         
         scramblePuzzlePieces();
