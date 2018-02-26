@@ -138,7 +138,6 @@
 
         function swapTextContent(source, target) {
             var targetTextContent = target.textContent;
-            //console.log(targetTextContent);
 
             target.textContent = source.textContent;
             source.textContent = targetTextContent;
@@ -159,8 +158,6 @@
                     x[i][j] = Number(squares[i * x.length + j].textContent);
                 }
             }
-
-            //console.log(x);
         }
 
         function isBox9ToTheRight(box) {
@@ -218,7 +215,6 @@
 
         function isBox9Below(box) {
             var boxNumber = box.id.replace("box", "");
-            //var modulus = Number(boxNumber) % x.length;
 
             if(boxNumber > x.length * (x.length - 1)) {
                 return false;
